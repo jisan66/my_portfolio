@@ -10,6 +10,7 @@ class DrawerWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
+      backgroundColor: Colors.cyan,
       child: SafeArea(
         child: ListView.separated(
           padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 24.0),

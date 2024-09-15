@@ -39,7 +39,7 @@ class _WelcomePageState extends State<WelcomePage> {
                   : Axis.horizontal,
               children: [
                 Expanded(
-                  flex: ScreenHelper.isMobile(context) ? 0 : 3,
+                  flex: ScreenHelper.isMobile(context) ? 0 : 5,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -68,18 +68,18 @@ class _WelcomePageState extends State<WelcomePage> {
                         child: Row(
                           mainAxisSize: MainAxisSize.min,
                           children: <Widget>[
-                            const Text(
+                            Text(
                               'I\'m',
                               style: TextStyle(
                                 fontFamily: 'Horizon',
-                                fontSize: 40,
+                                fontSize: ScreenHelper.isMobile(context) ? 20 : 40,
                                 color: Colors.white,
                               ),
                             ),
                             const SizedBox(width: 12),
                             DefaultTextStyle(
-                              style: const TextStyle(
-                                fontSize: 40,
+                              style: TextStyle(
+                                fontSize: ScreenHelper.isMobile(context) ? 20 : 40,
                                 fontFamily: 'Horizon',
                                 color: Colors.white,
                               ),
@@ -125,7 +125,7 @@ class _WelcomePageState extends State<WelcomePage> {
                               textStyle: const TextStyle(
                                   fontSize: 30,
                                   fontWeight: FontWeight.bold),
-                              colors: colorizeColors,
+                              colors: [Colors.white,Colors.white60, Colors.white38, Colors.white70],
                             )
                           ],
                         ),
@@ -135,7 +135,7 @@ class _WelcomePageState extends State<WelcomePage> {
                 ),
                 const SizedBox(width: 40),
                 Expanded(
-                  flex: ScreenHelper.isMobile(context) ? 0 : 3,
+                  flex: ScreenHelper.isMobile(context) ? 0 : 4,
                   child: Lottie.asset('assets/animation/yoga.json'),
                 ),
               ],

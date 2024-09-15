@@ -38,10 +38,9 @@ Widget _buildUi(double width, BuildContext context) => SizedBox(
                   : Axis.horizontal,
               children: [
                 Expanded(
-                  flex: ScreenHelper.isMobile(context) ? 0 : 3,
+                  flex: ScreenHelper.isMobile(context) ? 0 :4,
                   child: Lottie.asset(
                     'assets/animation/coder.json',
-                    width: 500,
                   ),
                 ),
                 const SizedBox(width: 40),

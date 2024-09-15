@@ -27,7 +27,7 @@ class _TopBarContentsState extends State<TopBarContents> {
           screenSize: screenSize,
           itemsScrollController: widget.itemScrollController,
         ));
-    return ScreenHelper(mobile: desktopheader, tablet: desktopheader, desktop: buildMobileHeader());
+    return ScreenHelper(mobile: buildMobileHeader(), tablet: buildMobileHeader(), desktop: desktopheader);
   }
 }
 
@@ -68,7 +68,7 @@ class DesktopTabBar extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(20),
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.end,
           children: [
             const SizedBox(width: 24),
             menuItem(toPage: 0, title: 'Home'),
