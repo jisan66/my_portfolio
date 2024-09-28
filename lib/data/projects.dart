@@ -2,13 +2,13 @@ import 'package:my_portfolio/models/project.dart';
 
 const List<Project> projects = [
   Project(
-    description: 'Workout Tracker App',
-    image: 'assets/workout.jpg',
+    description: 'ChatApp',
+    image: 'assets/chatapp.jpg',
     gitLink: 'https://github.com/',
   ),
   Project(
-    description: 'Furniture Shopping App',
-    image: 'assets/shopping.jpg',
+    description: 'CraftyBay',
+    image: 'assets/ecommerce.jpg',
     gitLink: 'https://github.com/',
   ),
   Project(
